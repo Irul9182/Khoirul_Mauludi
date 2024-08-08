@@ -1,0 +1,89 @@
+html{
+	scroll-behavior: smooth;
+}
+
+body{
+	font-family: sans-serif;
+	font-size: 10pt;
+	background-color: rgb(41, 189, 181);
+	background-size: 100%;
+	background-attachment: fixed;
+}
+
+.kotak{
+	width: 350px;
+	margin: 80px auto;
+	padding: 30px 10px;
+	background: white;
+	box-sizing : border-box;
+}
+
+.form{
+	width: 100%;
+	height: 40px;
+	position: relative;
+	margin-bottom: 30px;
+}
+
+label{
+	position: absolute;
+	bottom: 10px;
+	left: 0;
+	transition: 0.3s;
+	pointer-events: none;
+}
+
+.kotak:hover{
+	border: 2px solid rgb(205, 52, 9);
+}
+
+.daftar{
+	text-align: center;
+	pointer-events: none;
+}
+
+
+.kotak .form{
+	width: 100%;
+	height: 37px;
+	position: relative;
+	margin-bottom: 30px;
+}
+
+.kotak .form label{
+	position: absolute;
+	bottom: 10px;
+	left: 0;
+	transition: 0.3s;
+	pointer-events: none;
+}
+
+.kotak .form input{
+	width: 100%;
+	height: 40px;
+	border: none;
+	outline: none;
+	font-size: 16px;
+	border-bottom: 2px solid palevioletred;
+}
+
+.kotak .form input:focus ~ label,
+.kotak .form input:valid ~ label{
+	transform: translateY(-20px);
+	color: darkred;
+}
+
+.submit{
+	box-sizing: border-box;
+	width: 200px;
+	padding: 10px;
+	margin-bottom: 20px;
+	border: none;
+	border: 2px solid #42f;
+	transition: all 0.3s;
+	cursor: pointer;
+}
+
+.submit:hover{
+	box-shadow: inset 200px 0 0 0 red;
+}
